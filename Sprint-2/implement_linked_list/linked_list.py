@@ -35,16 +35,7 @@ class LinkedList:
 
         old_tail = self.tail
         value = old_tail.value
-
-        if self.head is self.tail:
-            self.head = None
-            self.tail = None
-        else:
-            self.tail = old_tail.previous
-            self.tail.next = None
-
-        old_tail.next = None
-        old_tail.previous = None
+        self.remove(old_tail)
 
         return value
 
