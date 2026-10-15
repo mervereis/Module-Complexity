@@ -48,11 +48,7 @@ export function removeDuplicates(inputSequence) {
 // allows us to check for duplicates more efficiently.
 
 export function removeDuplicates(inputSequence) {
-  const uniqueItems = new Set();
-
-  for (const item of inputSequence) {
-    uniqueItems.add(item);
-  }
+  const uniqueItems = new Set(inputSequence);
 
   return [...uniqueItems];
 }
