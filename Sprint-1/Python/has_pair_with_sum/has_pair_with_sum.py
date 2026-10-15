@@ -13,11 +13,6 @@ def has_pair_with_sum(numbers, target_sum):
     return False
 
 
-print(has_pair_with_sum([2, 4, 6, 8], 10))
-# True
-
-print(has_pair_with_sum([1, 2, 3], 10))
-# False
 """
 Find if there is a pair of numbers that sum to a target value.
 

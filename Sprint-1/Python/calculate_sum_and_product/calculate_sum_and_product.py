@@ -12,8 +12,6 @@ def calculate_sum_and_product(input_numbers: List[int]) -> Dict[str, int]:
     return {"sum": total_sum, "product": total_product}
 
 
-print(calculate_sum_and_product([2, 3, 5]))
-# {'sum': 10, 'product': 30}
 """
 Time Complexity: O(n)
 Space Complexity: O(1)

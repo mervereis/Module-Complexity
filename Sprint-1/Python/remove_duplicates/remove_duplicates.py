@@ -11,9 +11,6 @@ def remove_duplicates(values):
     return unique_items
 
 
-print(remove_duplicates([1, 2, 2, 3, 1, 4]))
-# [1, 2, 3, 4]
-
 """
 Remove duplicate values from a sequence,
 preserving the order of the first occurrence.

@@ -19,9 +19,6 @@ def find_common_items(
     return common_items
 
 
-print(find_common_items([1, 2, 3, 4], [2, 3, 5]))
-# [2, 3]
-
 """
 Find common items between two arrays.
 
