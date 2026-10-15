@@ -1,17 +1,22 @@
 
+from typing import Optional
+
+
 class Node:
-    def __init__(self, value):
-        self.value = value
-        self.next = None
-        self.previous = None
+    __slots__ = ("value", "next", "previous")
+
+    def __init__(self, value: object) -> None:
+        self.value: object = value
+        self.next: Optional["Node"] = None
+        self.previous: Optional["Node"] = None
 
 
 class LinkedList:
-    def __init__(self):
-        self.head = None
-        self.tail = None
+    def __init__(self) -> None:
+        self.head: Optional[Node] = None
+        self.tail: Optional[Node] = None
 
-    def push_head(self, value):
+    def push_head(self, value: object) -> Node:
         new_node = Node(value)
 
         if self.head is None:
@@ -24,7 +29,7 @@ class LinkedList:
 
         return new_node
 
-    def pop_tail(self):
+    def pop_tail(self) -> Optional[object]:
         if self.tail is None:
             return None
 
@@ -43,7 +48,7 @@ class LinkedList:
 
         return value
 
-    def remove(self, node):
+    def remove(self, node: Node) -> None:
         if node.previous is None:
             self.head = node.next
         else:
